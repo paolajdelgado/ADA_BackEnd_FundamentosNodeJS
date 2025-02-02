@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nombre": "Severance",
+    "temporadas": 2
+  },
+  {
+    "id": 2,
+    "nombre": "The good place",
+    "temporadas": 4
+  },
+  {
+    "id": 3,
+    "nombre": "Community",
+    "temporadas": 6
+  },
+  {
+    "id": 4,
+    "nombre": "Friends",
+    "temporadas": 9
+  }
+]

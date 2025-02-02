@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "Lavar",
+    "descripcion": "Lavar ropa separada por color"
+  },
+  {
+    "id": 3,
+    "nombre": "Compras",
+    "descripcion": "Falta leche, huevos y pechuga de pavo"
+  }
+]
