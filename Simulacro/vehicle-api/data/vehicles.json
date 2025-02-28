@@ -1,0 +1,6 @@
+[
+    {"id": 1, "marca": "jeep", "modelo": "liberty", "anio": 2025},
+    {"id": 2, "marca": "toyota", "modelo": "tacoma", "anio": 2017},
+    {"id": 3, "marca": "volkswagen", "modelo": "jetta", "anio": 2010},
+    {"id": 4, "marca": "honda", "modelo": "civic", "anio": 2019}
+]
