@@ -23,7 +23,7 @@ client.on('conect', () =>{
 //Enviar mensaje cada 5s
 setTimeout(() => {
     console.log('Mensaje automatico');
-}, 5000); //falta hacerlo que suceda cada 5 segundos hasta los 20s
+}, 5000); 
 
 
 //Escuchar evento data
@@ -31,20 +31,6 @@ client.on('data', (data) => {
     console.log('Mensaje recibido: ', data.toString());
 });
 
-// OTRA POSIBILIDAD PARA MENSAJE AUTOMATICO CADA 5S
-// let timeout = setTimeout(() => {
-//     console.log('Mensaje automático');
-//     client.end();
-// }, 5000);
-
-// client.on('data', () => {
-//     for(let i=0; i<3; i++) {
-//         clearTimeout(timeout);
-//         timeout = setTimeout(() => {
-//             console.log('Mensaje automático');
-//         }, 5000);
-//     }
-// });
 
 
 //Cerra conexion tras 20s
