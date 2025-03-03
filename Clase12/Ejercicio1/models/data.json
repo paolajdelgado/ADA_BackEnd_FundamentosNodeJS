@@ -1,0 +1,5 @@
+[
+    {"id": 1, "name": "El Principito", "autor": "Antoine de Saint-Exupery", "year": 1943, "genre": "novela"},
+    {"id": 1, "name": "Persona normal", "autor": "Benito Taibo", "year": 2011, "genre": "aventura"},
+    {"id": 1, "name": "Don Quijote de la Mancha", "autor": "Miguel de Cervantes", "year": 1605, "genre": "novela"}
+]
