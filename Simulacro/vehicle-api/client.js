@@ -1,14 +1,15 @@
 const net = require('net');
 const readlineSync = require("readline-sync");
-const { vehicleController } = require('./controllers/vehicleController');
+const vehicleController = require('./controllers/vehicleController');
 
 
 const client = net.createConnection({port: 8080}, ()=>{
-    console.log('Conectado al servidor');
+    //console.log('Conectado al servidor');
 });
 
 
 function menu() {
+    console.log('Conectado al servidor');
     let opciones;
     do{
         console.log('\nMenu de Opciones: ');
@@ -18,6 +19,14 @@ function menu() {
         console.log('4. Salir');
 
         opciones = readlineSync.question('Elija la opcion deseada: ')
+        
+        if (opciones === '4') {
+            console.log("🔚 Cerrando conexión...");
+            client.end();  // Cierra la conexión con el servidor
+            break;         // Sale del bucle `do-while`
+        }
+
+        client.write(opciones);
 
         switch (opciones) {
             case '1':
@@ -33,7 +42,7 @@ function menu() {
                 console.log('Opcion invalida');
                 break;
         }
-    } while (opciones !== '4')
+    } while (true) //(opciones !== '4')
 }
 
 menu();
