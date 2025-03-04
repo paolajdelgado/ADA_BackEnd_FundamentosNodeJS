@@ -9,7 +9,7 @@ const vehicleView ={
         } else {
             console.log('Vehiculos: ');
             vehicles.forEach((vehicle, index) => {
-                console.log(`${index + 1}. ${vehicle.id} - ${vehicle.marca} ${vehicle.modelo} (${vehicle.anio})`);
+                console.log(`${index + 1}. ${vehicle.marca} ${vehicle.modelo} (${vehicle.anio})`)
             })
         }  
     },
